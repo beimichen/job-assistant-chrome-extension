@@ -1,0 +1,30 @@
+{
+  "name": "JobAssistant",
+  "version": "0.0.6",
+  "content_scripts": [],
+  "web_accessible_resources": [],
+  "content_security_policy": "script-src 'self' 'unsafe-eval' 'https://*.jora.com/assets/* https://s3.us-west-2.amazonaws.com https://code.jquery.com/ https://apis.google.com/ https://ajax.googleapis.com https://maxcdn.bootstrapcdn.com https://use.fontawesome.com https://d3js.org https://cdnjs.cloudflare.com https://maxcdn.bootstrapcdn.com https://cdn.jsdelivr.net https://app.posthog.com; object-src 'self'",
+  "manifest_version": 2,
+  "description": "JobAssistant: Apply for jobs using AI.",
+  "icons": {
+    "16": "images/icon-16.png",
+    "32": "images/icon-32.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "scripts": []
+  },
+  "permissions": [
+    "<all_urls>"
+  ],
+  "browser_action": {
+    "default_icon": {
+      "19": "images/icon-19.png",
+      "38": "images/icon-38.png"
+    },
+    "default_title": "JobAssistant",
+    "default_popup": "templates/home.html"
+  }
+}

@@ -1,0 +1,34 @@
+<div id="filter-results-options" class="tools-options hide" style="height:46px;border-bottom: 1px solid #ebedf2;">
+  <div class="btn-group" style="display:inline;">
+    <button id="filterByTime" class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#646c9a;">
+      Anytime
+    </button>
+    <div class="dropdown-menu" aria-labelledby="timeDropdownMenuButton" style="width:100px;">
+      <a id="timeOption1" class="time-option dropdown-item" href="#">Anytime</a>
+      <a id="timeOption2" class="time-option dropdown-item" href="#">Past 7 days</a>
+      <a id="timeOption3" class="time-option dropdown-item" href="#">Past 14 days</a>
+      <a id="timeOption4" class="time-option dropdown-item" href="#">Past 30 days</a>
+    </div>
+  </div>
+  <span class="keywords-filter" style="padding-left:8.5px;padding-right:17px;color:#646c9a !important;font-weight:600;cursor:pointer;">Filter by keyword</span>
+  <span class="blacklist-filter" style="padding-left:8.5px;padding-right:17px;color:#646c9a !important;font-weight:600;cursor:pointer;">Exclude keywords</span>
+  <span class="refresh-filter" style="margin-left:80px;cursor:pointer;"><i class="bi bi-arrow-counterclockwise"></i></span>
+</div>
+<div class="keywords-filter-container hide" id="keywordsFilterContainer" style="margin-top:5px;">
+  <div class="tag-container-keywords" style="width:430px;margin-left:10px;">
+    <input type="text" name="tags" class="tagin" id="keywordsFilterInput" data-placeholder="Words to be included (Comma to separate...)">
+  </div>
+  <div class="keywords-filter-btn-container hide" id="keywordsFilterBtnContainer" style="height:35px;text-align:center;">
+    <button type="submit" class="btn hero-btn filter-btn sm" id="keywordFilterSubmitBtn" style="width:50px;margin-top:5px;height:25px;font-size:10px;line-height:9px;">Filter</button>
+  </div>
+</div>
+<div class="blacklist-filter-container hide" id="blacklistFilterContainer" style="margin-top:5px;">
+  <div class="tag-container-blacklist" style="width:430px;margin-left:10px;">
+    <input type="text" name="tags" class="tagin" id="blacklistFilterInput" data-placeholder="Words to be excluded (Comma to separate...)">
+  </div>
+  <div class="blacklist-filter-btn-container hide" id="blacklistFilterBtnContainer" style="height:35px;text-align:center;">
+    <button type="submit" class="btn hero-btn filter-btn sm" id="blacklistFilterSubmitBtn" style="width:50px;margin-top:5px;height:25px;font-size:10px;line-height:9px;">Filter</button>
+  </div>
+</div>
+<div class="job-ads">
+</div>

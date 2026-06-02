@@ -1,0 +1,279 @@
+<div class="job-wizard" style="overflow:auto;">
+  <div class="resume-form-container show">
+    <a class="close-resume-form" href="#">
+      <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M11.987107,10.5728934 L16.2800002,6.28000021 L17.6942138,7.69421377 L13.4013206,11.987107 L17.6942138,16.2800002 L16.2800002,17.6942138 L11.987107,13.4013206 L7.69421377,17.6942138 L6.28000021,16.2800002 L10.5728934,11.987107 L6.28000021,7.69421377 L7.69421377,6.28000021 L11.987107,10.5728934 Z"></path>
+      </svg>
+    </a>
+    <div class="btn-container" style="padding-top:20px;">
+      <button type="button" class="btn hero-btn" id="linkedinResumeBtn">Fill in form with Linkedin</button>
+    </div>
+    <div class="modal fade" id="linkedinPopup" tabindex="-1">
+      <div class="modal-dialog" id="linkedinModalDialog">
+        <div class="modal-content">
+          <div class="modal-body center modal-body-sm">
+            <p>
+              Feature coming soon!
+            </p>
+          </div>
+          <div class="modal-footer center inline modal-footer-sm tail" style="padding-top:3px;">
+            <button type="button" class="btn hero-btn x-sm" id="okayLinkedinPopup">Okay</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <form style="padding:30px;">
+      <label for="personalInputs" style="font-size:20px;padding-bottom:20px;font-weight:600;">Personal Details:</label>
+      <div class="form-personal-group" id="personalInputs">
+        <div class="form-row">
+          <div class="col left-col">
+            <label class="personal-label-container">
+              <div class="personal-label">First name</div>
+            </label>
+            <input type="text" class="form-control" placeholder="First name" id="firstNameInput">
+          </div>
+          <div class="col right-col">
+            <label class="personal-label-container">
+              <div class="personal-label">Middle name</div>
+            </label>
+            <input type="text" class="form-control" placeholder="Middle name" id="middleNameInput">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col left-col">
+            <label class="personal-label-container">
+              <div class="personal-label">Last name</div>
+            </label>
+            <input type="text" class="form-control" placeholder="Last name" id="lastNameInput">
+          </div>
+          <div class="col right-col">
+            <label class="personal-label-container">
+              <div class="personal-label">Preferred job title</div>
+            </label>
+            <input type="text" class="form-control" placeholder="Preferred Job title" id="jobTitleInput">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col left-col">
+            <label class="personal-label-container">
+              <div class="personal-label">Email</div>
+            </label>
+            <input type="email" class="form-control" placeholder="Email" id="emailInput">
+          </div>
+          <div class="col right-col">
+            <label class="personal-label-container">
+              <div class="personal-label">Phone number</div>
+            </label>
+            <input type="text" class="form-control" placeholder="Phone number" id="phoneNumberInput">
+          </div>
+        </div>
+        <div class="additional-personal-container hide">
+          <div class="form-row">
+            <div class="col left-col">
+              <label class="personal-label-container">
+                <div class="personal-label">City</div>
+              </label>
+              <input type="text" class="form-control" placeholder="City" id="cityInput">
+            </div>
+            <div class="col right-col">
+              <label class="personal-label-container">
+                <div class="personal-label">State</div>
+              </label>
+              <input type="text" class="form-control" placeholder="State" id="stateInput">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col left-col">
+              <label class="personal-label-container">
+                <div class="personal-label">Address</div>
+              </label>
+              <input type="text" class="form-control" placeholder="Address" id="addressInput">
+            </div>
+            <div class="col right-col">
+              <label class="personal-label-container">
+                <div class="personal-label">Zip code</div>
+              </label>
+              <input type="text" class="form-control" placeholder="Zip code" id="zipCodeInput">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col left-col">
+              <label class="personal-label-container">
+                <div class="personal-label">Country</div>
+              </label>
+              <input type="text" class="form-control" placeholder="Country" id="countryInput" style="width:356.5px">
+            </div>
+          </div>
+          <label style="font-size:16px;padding-bottom:20px;font-weight:550;">Languages:</label>
+          <div class="languages-loading-container">
+          </div>
+          <div tabindex="0" class="add-language-container">
+            <div class="add-language-link-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="13 11 17 11 17 13 13 13 13 17 11 17 11 13 7 13 7 11 11 11 11 7 13 7"></polygon>
+              </svg>
+            </div>
+            <span class="add-language-link-text">Add language</span>
+          </div>
+        </div>
+        <div class="additional-personal-btn-link-container">
+          <span class="additional-personal-text">Edit additional details</span>
+          <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
+               class="additional-persona-icon">
+            <path
+              d="M9.431 7.257l1.352-1.474 5.893 5.48a1 1 0 0 1 0 1.474l-5.893 5.45-1.352-1.475L14.521 12 9.43 7.257z"></path>
+          </svg>
+        </div>
+      </div>
+      <label style="font-size:20px;padding-bottom:20px;font-weight:600;">Skills</label>
+      <div class="form-row skills-row">
+        <div class="col left-col">
+          <label class="personal-label-container">
+            <div class="personal-label">Tools</div>
+          </label>
+          <input type="text" name="tags" class="tagin" id="toolsResume"
+                 data-placeholder="Tools (Comma to separate skills...)">
+        </div>
+        <div class="col right-col">
+          <label class="personal-label-container">
+            <div class="personal-label">Skills</div>
+          </label>
+          <input type="text" name="tags" class="tagin" id="skillsResume"
+                 data-placeholder="Skills (Comma to separate skills...)">
+        </div>
+      </div>
+      <label for="profileSummaryInput" style="font-size:20px;padding-bottom:20px;padding-top:10px;font-weight:600;">Profile
+        Summary:</label>
+      <div id="profileSummaryInput">
+      </div>
+      <label style="font-size:20px;padding-bottom:20px;font-weight:550;">Employment history:</label>
+      <div class="experiences-loading-container">
+      </div>
+      <div tabindex="0" class="add-experience-container">
+        <div class="add-experience-link-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="13 11 17 11 17 13 13 13 13 17 11 17 11 13 7 13 7 11 11 11 11 7 13 7"></polygon>
+          </svg>
+        </div>
+        <span class="add-experience-link-text">Add experience</span>
+      </div>
+      <label style="font-size:20px;padding-bottom:20px;font-weight:550;">Education:</label>
+      <div class="educations-loading-container">
+      </div>
+      <div tabindex="0" class="add-education-container">
+        <div class="add-education-link-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="13 11 17 11 17 13 13 13 13 17 11 17 11 13 7 13 7 11 11 11 11 7 13 7"></polygon>
+          </svg>
+        </div>
+        <span class="add-education-link-text">Add education</span>
+      </div>
+      <label style="font-size:20px;padding-bottom:20px;font-weight:550;">Reference:</label>
+      <div class="references-checkbox-outer-container">
+        <label class="references-ios-checkbox-label"><input type="checkbox" class="ios-checkbox">
+          <div class="references-ios-btn-checkbox-container references-_unchecked">
+            <div class="references-ios-btn-checkbox references-unchecked"></div>
+          </div>
+          I'd like to hide references and make them available only upon request
+        </label>
+      </div>
+      <div class="references-loading-container">
+      </div>
+      <div tabindex="0" class="add-reference-container">
+        <div class="add-reference-link-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="13 11 17 11 17 13 13 13 13 17 11 17 11 13 7 13 7 11 11 11 11 7 13 7"></polygon>
+          </svg>
+        </div>
+        <span class="add-reference-link-text">Add reference</span>
+      </div>
+    </form>
+    <button class="preview-btn-container">
+      <div class="preview-btn">Preview &amp; Download</div>
+      <div class="preview-btn-icon"></div>
+    </button>
+  </div>
+  <div class="preview-container hide">
+    <div class="toolbar-container">
+      <link rel="stylesheet" type="text/css" href="../../../styles/previewer-tools.css">
+      <div class="back-to-editor-outer-container">
+        <div class="back-to-editor-inner-container">
+          <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
+               class="back-arrow-svg">
+            <path
+              d="M9.32427537,7.23715414 L10.6757246,5.76284586 L16.6757246,11.2628459 C17.1080918,11.6591824 17.1080918,12.3408176 16.6757246,12.7371541 L10.6757246,18.2371541 L9.32427537,16.7628459 L14.5201072,12 L9.32427537,7.23715414 Z"></path>
+          </svg>
+          <div class="back-link-text">Back to editor</div>
+        </div>
+      </div>
+      <div class="color-global-container">
+        <div class="color-outer-container">
+          <div class="color-inner-container">
+            <div size="32" color="#cf8a05" class="color-1">
+              <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                   class="active-color">
+                <path
+                  d="M16.6917162,8.75389189 L18.3082838,10.2461081 L12.3082838,16.7461081 C11.8845221,17.2051833 11.1639539,17.2195889 10.7221825,16.7778175 L6.22218254,12.2778175 L7.77781746,10.7221825 L11.4682653,14.4126304 L16.6917162,8.75389189 Z"></path>
+              </svg>
+            </div>
+            <div size="32" color="#673AB7" class="color-2">
+              <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                   class="inactive-color">
+                <path
+                  d="M16.6917162,8.75389189 L18.3082838,10.2461081 L12.3082838,16.7461081 C11.8845221,17.2051833 11.1639539,17.2195889 10.7221825,16.7778175 L6.22218254,12.2778175 L7.77781746,10.7221825 L11.4682653,14.4126304 L16.6917162,8.75389189 Z"></path>
+              </svg>
+            </div>
+            <div size="32" color="#2196F3" class="color-3">
+              <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                   class="inactive-color">
+                <path
+                  d="M16.6917162,8.75389189 L18.3082838,10.2461081 L12.3082838,16.7461081 C11.8845221,17.2051833 11.1639539,17.2195889 10.7221825,16.7778175 L6.22218254,12.2778175 L7.77781746,10.7221825 L11.4682653,14.4126304 L16.6917162,8.75389189 Z"></path>
+              </svg>
+            </div>
+            <div size="32" color="#22A860" class="color-4">
+              <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                   class="inactive-color">
+                <path
+                  d="M16.6917162,8.75389189 L18.3082838,10.2461081 L12.3082838,16.7461081 C11.8845221,17.2051833 11.1639539,17.2195889 10.7221825,16.7778175 L6.22218254,12.2778175 L7.77781746,10.7221825 L11.4682653,14.4126304 L16.6917162,8.75389189 Z"></path>
+              </svg>
+            </div>
+            <div size="32" color="#FF4D4D" class="color-5">
+              <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                   class="inactive-color">
+                <path
+                  d="M16.6917162,8.75389189 L18.3082838,10.2461081 L12.3082838,16.7461081 C11.8845221,17.2051833 11.1639539,17.2195889 10.7221825,16.7778175 L6.22218254,12.2778175 L7.77781746,10.7221825 L11.4682653,14.4126304 L16.6917162,8.75389189 Z"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="download-btn-container">
+        <button class="download-btn">Download PDF</button>
+      </div>
+    </div>
+    <div class="preview-global-container">
+      <div class="preview-outer-container">
+        <div class="preview-inner-container">
+        </div>
+        <div class="page-number-control">
+          <div class="page-back">
+            <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9.32427537,7.23715414 L10.6757246,5.76284586 L16.6757246,11.2628459 C17.1080918,11.6591824 17.1080918,12.3408176 16.6757246,12.7371541 L10.6757246,18.2371541 L9.32427537,16.7628459 L14.5201072,12 L9.32427537,7.23715414 Z"></path>
+            </svg>
+          </div>
+          <div class="page-tracker">1 / 1</div>
+          <div class="page-forward">
+            <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9.32427537,7.23715414 L10.6757246,5.76284586 L16.6757246,11.2628459 C17.1080918,11.6591824 17.1080918,12.3408176 16.6757246,12.7371541 L10.6757246,18.2371541 L9.32427537,16.7628459 L14.5201072,12 L9.32427537,7.23715414 Z"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="printable-iframe-container">
+      </div>
+    </div>
+  </div>
+</div>

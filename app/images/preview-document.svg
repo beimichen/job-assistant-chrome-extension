@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>preview-document</title>
+    <desc>Created with Sketch.</desc>
+    <g id="preview-document" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="preview" transform="translate(8.000000, 5.000000)">
+            <path d="M1,0 L16,0 L24,8 L24,29 C24,29.5522847 23.5522847,30 23,30 L1,30 C0.44771525,30 6.76353751e-17,29.5522847 0,29 L0,1 C-6.76353751e-17,0.44771525 0.44771525,1.01453063e-16 1,0 Z" id="shape" fill="#FFFFFF"></path>
+            <rect id="Rectangle-4" fill="#CFD6E6" x="5" y="12" width="14" height="2"></rect>
+            <rect id="Rectangle-4" fill="#CFD6E6" x="5" y="16" width="14" height="2"></rect>
+            <rect id="Rectangle-4" fill="#CFD6E6" x="5" y="20" width="8" height="2"></rect>
+            <path d="M16,0 L24,8 L17,8 C16.4477153,8 16,7.55228475 16,7 L16,0 Z" id="shape" fill="#CFD6E6"></path>
+        </g>
+    </g>
+</svg>

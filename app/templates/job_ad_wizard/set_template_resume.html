@@ -1,0 +1,62 @@
+<div class="set-template-container-resume" style="width:800px;">
+  <div class="resume-checkbox-outer-container">
+    <label class="resume-ios-checkbox-label"><input type="checkbox" class="ios-checkbox">
+      <div class="resume-ios-btn-checkbox-container resume-_unchecked">
+        <div class="resume-ios-btn-checkbox resume-unchecked"></div>
+      </div>
+      <span style="font-size:14px;">I want to all PDFs generated to conform to one template</span>
+    </label>
+  </div>
+  <div class="template-slider disabled" style="padding-top:30px;">
+    <div class="glider" style="width:90%;left:-180px;">
+      <div class="glider-slide"></div>
+      <div class="glider-slide" id="resume-template-1"><img class="resume-sample"
+                                                            src="https://YOUR_STATIC_BUCKET.s3-us-west-2.amazonaws.com/resume_sample.jpg">
+      </div>
+      <div class="glider-slide" id="resume-template-2"><img class="resume-sample"
+                                                            src="https://YOUR_STATIC_BUCKET.s3-us-west-2.amazonaws.com/resume_sample2.jpg">
+      </div>
+      <div class="glider-slide" id="resume-template-3"><img class="resume-sample"
+                                                            src="https://YOUR_STATIC_BUCKET.s3-us-west-2.amazonaws.com/resume_sample3.jpg">
+      </div>
+      <div class="glider-slide" id="resume-template-4"><img class="resume-sample"
+                                                            src="https://YOUR_STATIC_BUCKET.s3-us-west-2.amazonaws.com/resume_sample4.jpg">
+      </div>
+      <div class="glider-slide"></div>
+    </div>
+    <button role="button" aria-label="Previous" class="glider-prev" id="glider-prev-add" aria-disabled="false"><i
+      class="bi bi-chevron-left"></i></button>
+    <button role="button" aria-label="Next" class="glider-next" id="glider-next-add" aria-disabled="false"><i
+      class="bi bi-chevron-right"></i></button>
+    <div role="tablist" class="dots" style="padding-top:30px;"></div>
+  </div>
+  <div class="modal fade" id="resumeTemplatePopup" tabindex="-1">
+    <div class="modal-dialog" id="resumeTemplateDialog">
+      <div class="modal-content">
+        <div class="modal-body center modal-body-sm" style="padding-top:4px;">
+          <p>
+            Are you sure you want to use this template for all resume PDFs?
+          </p>
+        </div>
+        <div class="modal-footer center inline modal-footer-sm tail" style="padding-top:3px;">
+          <button type="button" class="btn hero-btn x-sm" id="confirmResumeTemplate">YES</button>
+          <button type="button" class="btn hero-btn x-sm" id="cancelResumeTemplate">NO</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="storedResumeSuccessPopup" tabindex="-2">
+    <div class="modal-dialog" id="successDialog">
+      <div class="modal-content">
+        <div class="modal-body center modal-body-sm">
+          <p>
+            Successfully stored template!
+          </p>
+        </div>
+        <div class="modal-footer center inline modal-footer-sm tail" style="padding-top:3px;">
+          <button type="button" class="btn hero-btn x-sm" id="confirmSuccess">Okay</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

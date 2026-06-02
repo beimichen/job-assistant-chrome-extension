@@ -1,0 +1,142 @@
+<div class="job-details">
+  <div class="job-detail-section">
+<!--    <div class="job-details-header">-->
+<!--      &lt;!&ndash;      <div class="job-detail-tabs" style="height:40px;border:1px solid rgba(0,0,0,.125);border-radius:.25rem;">&ndash;&gt;-->
+<!--      &lt;!&ndash;      </div>&ndash;&gt;-->
+<!--      <ul class="nav nav-tabs" id="myTab" role="tablist">-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link active" id="jobdetail-tab" data-toggle="tab" href="#jobdetail" role="tab"-->
+<!--             aria-controls="home" aria-selected="true">Job Details</a>-->
+<!--        </li>-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link" id="coverletter-tab" data-toggle="tab" href="#coverletter" role="tab"-->
+<!--             aria-controls="profile" aria-selected="false">Cover Letter</a>-->
+<!--        </li>-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link" id="resume-tab" data-toggle="tab" href="#resume" role="tab"-->
+<!--             aria-controls="profile" aria-selected="false">Resume</a>-->
+<!--        </li>-->
+<!--      </ul>-->
+<!--      <div class="tab-content" id="myTabContent">-->
+<!--&lt;!&ndash;        <div class="tab-pane custom-fade show active" id="jobdetail" role="tabpanel" aria-labelledby="jobdetail-tab">...</div>&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="tab-pane custom-fade" id="coverletter" role="tabpanel" aria-labelledby="coverletter-tab">...</div>&ndash;&gt;-->
+<!--      </div>-->
+<!--    </div>-->
+    <div class="coverletter-section scrollable hide">
+      <div class="coverletter-editor-container">
+        <div class="alert alert-warning alert-dismissible fade show hide" id="cover-letter-alert-warning" role="alert">
+          <div id="coverletter-editor-alert-heading"><strong>Please highlight words that are:</strong></div>
+            <ul id="coverletter-editor-required-keywords">
+            </ul>
+          <button type="button" class="close" id="close-alert" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="coverletter-editor" id="coverletter-editor" contenteditable="true">
+        </div>
+      </div>
+      <div class="cover-letter-buttons-container inline center">
+        <a href="#" class="btn hero-btn sm cover-letter-btns disabled" id="save-coverletter-edit" style="margin-top:10.5px;">Save</a>
+        <a href="#" class="btn hero-btn sm cover-letter-btns" id="set-coverletter-default" style="margin-top:10.5px;">Set default template</a>
+        <a href="#" class="btn hero-btn sm cover-letter-btns" id="generate-cv-pdf" style="margin-top:10.5px;">Generate PDF</a>
+      </div>
+    </div>
+    <div class="modal fade" id="entityModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body center modal-body-sm">
+            <div class="btn-group">
+              <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Keyword type...
+              </button>
+              <div class="dropdown-menu" id="keyword-dropdown">
+                <a class="dropdown-item" href="#">Organization</a>
+                <a class="dropdown-item" href="#">Position Title</a>
+                <a class="dropdown-item" href="#">Hirer's Name</a>
+                <a class="dropdown-item" href="#">Email</a>
+                <a class="dropdown-item" href="#">Your Name</a>
+                <a class="dropdown-item" href="#">Phone Number</a>
+                <a class="dropdown-item" href="#">Education Institution</a>
+                <a class="dropdown-item" href="#">Degree</a>
+                <a class="dropdown-item" href="#">Field of Study</a>
+                <a class="dropdown-item" href="#">Number</a>
+                <a class="dropdown-item" href="#">Location</a>
+                <a class="dropdown-item" href="#">Percent</a>
+                <a class="dropdown-item" href="#">Length of Time</a>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer center inline modal-footer-sm tail">
+            <button type="button" class="btn hero-btn x-sm" id="save-keyword-type">SAVE</button>
+            <button type="button" class="btn btn-secondary x-sm" data-dismiss="modal" id="cancel-keyword-type">CANCEL</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="inputModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body center modal-body-sm">
+            <input id="keyword-input" class="form-control form-control-sm" type="text" placeholder="Keyword(s)..." style="width:130px;">
+          </div>
+          <div class="modal-footer center inline modal-footer-sm tail" style="padding-top:3px;">
+            <button type="button" class="btn hero-btn x-sm" id="save-keyword">SAVE</button>
+            <button type="button" class="btn btn-secondary x-sm" data-dismiss="modal">CANCEL</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="job-details-body scrollable">
+      <div class="job-details-body-upper-section">
+        <div class="job-detail-company-logo">
+        </div>
+        <div class="job-detail-source" style="font-size:12.5px;">
+        </div>
+      </div>
+      <div class="job-detail-position job-detail-container">
+        <div class="job-detail-position-text"></div>
+        <!--        <p class="job-detail-company-text job-detail-text" style="font-size:12.5px;"></p>-->
+      </div>
+      <div class="job-detail-company job-detail-container">
+        <div class="job-detail-company-text"></div>
+        <!--        <p class="job-detail-company-text job-detail-text" style="font-size:12.5px;"></p>-->
+      </div>
+      <div class="job-detail-salary job-detail-container">
+        <div class="job-detail-salary-text"></div>
+        <!--        <h6 class="job-item-label job-detail-text" style="font-size:15px;font-weight:550;">Salary:</h6>-->
+        <!--        <p class="job-detail-salary-text job-detail-text" style="font-size:12.5px;"></p>-->
+      </div>
+      <div class="job-detail-location job-detail-container">
+        <div class="job-detail-location-text"></div>
+        <!--        <p class="job-detail-company-text job-detail-text" style="font-size:12.5px;"></p>-->
+      </div>
+      <div class="job-detail-employment-type job-detail-container">
+        <div class="job-detail-employment-type-text"></div>
+        <!--        <p class="job-detail-company-text job-detail-text" style="font-size:12.5px;"></p>-->
+      </div>
+      <div class="job-detail-knowledge-and-abilities job-detail-container">
+        <div class="job-detail-knowledge-and-abilities-text"></div>
+        <!--        <p class="job-detail-company-text job-detail-text" style="font-size:12.5px;"></p>-->
+      </div>
+      <div class="job-detail-matched-skills job-detail-container">
+        <div class="job-detail-matched-skills-text"></div>
+        <!--        <p class="job-detail-company-text job-detail-text" style="font-size:12.5px;"></p>-->
+      </div>
+      <div class="job-detail-extracted-skills job-detail-container">
+        <div class="job-detail-extracted-skills-text"></div>
+        <!--        <p class="job-detail-company-text job-detail-text" style="font-size:12.5px;"></p>-->
+      </div>
+      <div class="job-detail-description">
+        <h6 class="job-item-label" style="font-size:15px;font-weight:550;">Job Description:</h6>
+        <div class="job-detail-description-text" style="font-size:12.5px;"></div>
+      </div>
+    </div>
+  </div>
+  <div class="resume-section scrollable hide">
+  </div>
+  <div class="job-details-footer">
+    <div class="job-detail-apply-container border-solid inline center">
+      <a href="#" class="btn hero-btn" id="job-apply" style="margin-top:10.5px;">Apply Now</a>
+    </div>
+  </div>
+</div>

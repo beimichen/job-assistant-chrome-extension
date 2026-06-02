@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "JobAssistant",
+    "description": "JobAssistant..."
+  },
+  "appDescription": {
+    "message": "JobAssistant...",
+    "description": "The description of the application"
+  }
+}
