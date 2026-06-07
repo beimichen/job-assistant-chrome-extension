@@ -7,7 +7,7 @@ application wizard.
 
 This is de-branded reference code from a production extension. Backend hosts,
 analytics keys, AWS Cognito pool, and S3 buckets have been replaced with
-`YOUR_*` placeholders — wire it to your own services before loading.
+`YOUR_*` placeholders - wire it to your own services before loading.
 
 ## Highlights
 
@@ -47,4 +47,4 @@ unpacked** → select the `app/` directory.
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT - see [LICENSE](LICENSE).
